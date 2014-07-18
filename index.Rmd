@@ -154,7 +154,7 @@ haireye = as.data.frame(HairEyeColor)
 n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
   data = subset(haireye, Sex == 'Male')
 )
-n1$print('chart1')\n`` `")
+n1$print('chart1')\n```")
 ```
 
 Run slidify on the document, and you will see an interactive NVD3 plot with some nice controls.
@@ -166,7 +166,7 @@ Next, we will add an interactive console to our document. It allows the user to 
 As before, we first add the `shiny` and `interactive` widgets to the list of widgets in the YAML front matter.
 
 ```
-widgets    : [bootstrap, quiz, shiny, interactive]
+widgets     : [bootstrap, quiz, shiny, interactive]
 ```
 
 We markup the slide and a knitr code chunk to instruct slidify to treat it as an interactive code chunk.
